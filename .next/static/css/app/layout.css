@@ -606,11 +606,17 @@ video {
 .table {
   display: table;
 }
+.hidden {
+  display: none;
+}
 .w-full {
   width: 100%;
 }
 .flex-col {
   flex-direction: column;
+}
+.items-center {
+  align-items: center;
 }
 .justify-center {
   justify-content: center;
@@ -671,4 +677,18 @@ h1 {
   text-align: center;
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+
+  .md\:flex {
+    display: flex;
+  }
+}
+
+@media (min-width: 976px) {
+
+  .lg\:flex {
+    display: flex;
+  }
 }

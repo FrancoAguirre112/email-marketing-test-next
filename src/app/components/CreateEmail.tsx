@@ -60,10 +60,13 @@ export const CreateEmail = () => {
   }, [currentID]);
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full flex flex-col justify-center items-center">
       <h1>Create Email</h1>
       <h2 className="text-center mb-2">For testing: Can only send from onboarding@resend.dev</h2>
+      <div className="hidden lg:flex">
       <EmailEditor ref={emailEditorRef} />
+
+      </div>
       <div>
         <h2 className="text-center my-2">
           Bug: Email doesnt update if you click Save email too fast. Wait 5
